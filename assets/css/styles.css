@@ -1,0 +1,74 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo degradê azul */
+body {
+    background: linear-gradient(to bottom, #3a8dff, #00bcd4); /* Gradiente azul */
+    color: #fff; /* Cor do texto branca */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height da tela */
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+/* Link para o GitHub */
+p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Menu de navegação */
+.menu {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para o menu */
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px; /* Largura do menu */
+}
+
+.menu h2 {
+    font-size: 29px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: green; /* Cor de destaque para hover */
+}

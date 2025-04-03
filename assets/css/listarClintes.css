@@ -1,0 +1,125 @@
+/* Estilos principais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centralização da página */
+body {
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff); /* Degradê suave entre azul claro e branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height da tela */
+    margin: 0;
+    flex-direction: column;
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Títulos */
+h1 {
+    color: #2c6e2f; /* Verde */
+    margin-bottom: 20px;
+}
+
+/* Mensagens de sucesso/erro */
+.success, .error {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* Lista de clientes */
+.clientes-lista {
+    width: 100%;
+    max-width: 800px; /* Limita o tamanho máximo da lista */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Caso a tabela seja muito larga, adiciona barra de rolagem */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #2c6e2f;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Alternância de cores nas linhas */
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+tr:hover td {
+    background-color: #e0f7fa; /* Hover suave nas linhas */
+}
+
+/* Estilo para os links de ações */
+a {
+    text-decoration: none;
+    color: #2c6e2f;
+    font-weight: bold;
+    
+}
+
+a:hover {
+    color: blue; /* Verde mais escuro no hover */
+}
+
+/* Estilo para o botão de voltar */
+a button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f44336; /* Vermelho claro */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+}
+
+/* Efeito hover no botão de voltar (vermelho mais escuro) */
+a button:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro */
+    color: white;
+}
+
+/* Efeito de clique (pressionado) no botão de voltar */
+a button:active {
+    background-color: #b71c1c; /* Vermelho ainda mais escuro */
+    transform: scale(0.98); /* Dá o efeito de "pressionamento" */
+}

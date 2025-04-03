@@ -1,0 +1,109 @@
+/* Estilos principais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centralização da página */
+body {
+    background: linear-gradient(to bottom, #0caabf, #ffffff); /* Degradê suave entre azul claro e branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height da tela */
+    margin: 0;
+}
+
+/* Container do formulário */
+form {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais visível */
+    width: 100%;
+    max-width: 400px; /* Largura máxima */
+    transition: all 0.3s ease; /* Transição suave para bordas e sombras */
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #2c6e2f; /* Verde */
+    margin-bottom: 20px;
+}
+
+/* Estilo para os labels e inputs */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Inputs */
+input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+    background-color: #2c6e2f; /* Verde */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Efeito suave no hover */
+}
+
+/* Efeito hover no botão de envio */
+input[type="submit"]:hover {
+    background-color: #246c24; /* Verde mais escuro */
+}
+
+/* Mensagens de sucesso/erro */
+.success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Link de voltar com estilo de botão */
+a button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f44336; /* Vermelho claro */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Transição suave para todos os efeitos */
+}
+
+/* Efeito hover no botão de voltar (vermelho mais escuro) */
+a button:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro */
+    color: white;
+}
+
+/* Efeito de clique (pressionado) no botão de voltar */
+a button:active {
+    background-color: #b71c1c; /* Vermelho ainda mais escuro */
+    transform: scale(0.98); /* Dá o efeito de "pressionamento" */
+}
